@@ -191,7 +191,7 @@ SUBARCH := arm
 export KBUILD_BUILDHOST := $(SUBARCH)
 ARCH		?= $(SUBARCH)
 #CROSS_COMPILE	?= arm-eabi-
-CROSS_COMPILE	?= /home/mikrotik/kernel_tools/toolchains/linaro-4.7.3/bin/arm-linux-gnueabihf-
+CROSS_COMPILE	?= /home/mikrotik/new_toolchains/gcc-linaro-arm-linux-gnueabihf-4.7-2013.01-20130125_linux/bin/arm-linux-gnueabihf-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
