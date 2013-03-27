@@ -190,8 +190,8 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ \
 SUBARCH := arm
 export KBUILD_BUILDHOST := $(SUBARCH)
 ARCH		?= $(SUBARCH)
-#CROSS_COMPILE	?= arm-eabi-
-CROSS_COMPILE	?= /home/mikrotik/new_toolchains/gcc-linaro-arm-linux-gnueabihf-4.7-2013.01-20130125_linux/bin/arm-linux-gnueabihf-
+#CROSS_COMPILE	?= arm-cortex_a8-linux-gnueabi-
+CROSS_COMPILE	?= /home/mikrotik/toolchains/arm-cortex_a8-linux-gnueabi-linaro_4.7.3-2013.03-build_2013_03_15/bin/arm-cortex_a8-linux-gnueabi-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
